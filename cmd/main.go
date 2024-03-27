@@ -25,7 +25,7 @@ type AssetItem struct {
 
 func main() {
 	if len(os.Args) < 3 {
-		fmt.Println("Usage: github-release OWNER REPO BEARER_TOKEN")
+		fmt.Println("Usage: github-downloads <OWNER> <REPO>")
 		os.Exit(1)
 	}
 
@@ -81,5 +81,5 @@ func main() {
 		os.Exit(1)
 	}
 
-	fmt.Println("Results written to results.json")
+	fmt.Println("Raw results written to results.json")
 }
